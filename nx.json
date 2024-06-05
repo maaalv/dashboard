@@ -49,6 +49,15 @@
       "linter": "eslint",
       "style": "scss",
       "unitTestRunner": "jest"
+    },
+    "@nx/angular:component": {
+      "style": "scss",
+      "inlineTemplate": false,
+      "inlineStyle": true,
+      "skipTests": true,
+      "standalone": true,
+      "changeDetection": "OnPush",
+      "prefix": "nova"
     }
   },
   "defaultProject": "dashboard"
