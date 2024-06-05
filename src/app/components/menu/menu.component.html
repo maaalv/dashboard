@@ -1,0 +1,44 @@
+<!-- !! 100% GENERATED CODE -- DO NOT MODIFY !! -->
+
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+    <div class="logo"></div>
+  </ng-template>
+  <ng-template pTemplate="item" let-item let-root="root">
+    <a pRipple class="flex align-items-center p-menuitem-link">
+      <span [class]="item.icon"></span>
+      <span class="ml-2">{{ item.label }}</span>
+      <p-badge
+        *ngIf="item.badge"
+        [ngClass]="{ 'ml-auto': !root, 'ml-2': root }"
+        [value]="item.badge"
+      />
+      <span
+        *ngIf="item.shortcut"
+        class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1"
+        >{{ item.shortcut }}</span
+      >
+      <i
+        *ngIf="item.items"
+        [ngClass]="[
+          'pi',
+          root ? 'pi-angle-down ml-2' : 'pi-angle-right ml-auto'
+        ]"
+      ></i>
+    </a>
+  </ng-template>
+  <ng-template pTemplate="end">
+    <div class="flex align-items-center gap-2">
+      <!-- <input type="text" pInputText placeholder="Search" class="p-2" /> -->
+      <p-menu #menu [model]="items" [popup]="true" />
+
+      <p-avatar
+        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+        shape="circle"
+        size="large"
+        class="pt-1 mr-2 cursor-pointer"
+        (click)="menu.toggle($event)"
+      />
+    </div>
+  </ng-template>
+</p-menubar>

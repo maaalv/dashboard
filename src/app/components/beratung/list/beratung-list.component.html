@@ -1,0 +1,29 @@
+<p-card header="Beratungen" subheader="Subheader">
+  <div class="flex flex-col gap-4">
+    <div class="flex gap-4">
+      <p-card
+        header="Aktive Beratungen"
+        subheader="In den letzten 14 Tagen bearbeitet"
+        styleClass="flex-1 w-full border-l-2 border-green-400"
+      >
+        37
+      </p-card>
+      <p-card
+        header="Aktive GDs"
+        subheader="Vom Kunden gestartete dynamische GD"
+        styleClass="flex-1 w-full border-l-2 border-purple-400"
+      >
+        4
+      </p-card>
+      <p-card
+        header="Inaktive Sessions"
+        subheader="Daily Active Users :)"
+        styleClass="flex-1 w-full border-l-2 border-yellow-400"
+      >
+        223
+      </p-card>
+    </div>
+
+    <nova-dev-beratung-table></nova-dev-beratung-table>
+  </div>
+</p-card>

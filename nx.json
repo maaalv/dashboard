@@ -57,7 +57,7 @@
       "skipTests": true,
       "standalone": true,
       "changeDetection": "OnPush",
-      "prefix": "nova"
+      "prefix": "nova-dev"
     }
   },
   "defaultProject": "dashboard"

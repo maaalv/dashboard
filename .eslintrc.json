@@ -24,7 +24,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "nova",
+            "prefix": "nova-dev",
             "style": "camelCase"
           }
         ],
@@ -32,7 +32,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "nova",
+            "prefix": "nova-dev",
             "style": "kebab-case"
           }
         ]

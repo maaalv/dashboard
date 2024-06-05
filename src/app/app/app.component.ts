@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from '../nx-welcome.component';
+import { LayoutComponent } from '../components/layout/layout.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'app-root',
+  imports: [RouterModule, LayoutComponent],
+  selector: 'nova-dev-app',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'dashboard';
-}
+export class AppComponent {}

@@ -2,7 +2,7 @@
   "name": "dashboard",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "nova",
+  "prefix": "nova-dev",
   "sourceRoot": "./src",
   "tags": [],
   "targets": {
