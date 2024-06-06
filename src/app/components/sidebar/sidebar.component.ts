@@ -24,33 +24,70 @@ export class SidebarComponent implements OnInit {
         separator: true,
       },
       {
-        label: 'Documents',
+        label: 'Beratungen',
         items: [
           {
-            label: 'New',
+            label: 'Neue',
             icon: 'pi pi-plus',
             shortcut: '⌘+N',
           },
           {
-            label: 'Search',
-            icon: 'pi pi-search',
+            label: 'Aktive',
+            icon: 'pi pi-check',
+            shortcut: '⌘+S',
+          },
+          {
+            label: 'Alle',
+            icon: 'pi pi-list',
             shortcut: '⌘+S',
           },
         ],
       },
       {
-        label: 'Profile',
+        label: 'Anträge',
         items: [
           {
-            label: 'Settings',
+            label: 'Pendenzen',
             icon: 'pi pi-cog',
-            shortcut: '⌘+O',
+            // shortcut: '⌘+O',
+            badge: '9',
+          },
+
+          {
+            label: 'Warten',
+            icon: 'pi pi-inbox',
+            badge: 'Neu',
           },
           {
-            label: 'Messages',
-            icon: 'pi pi-inbox',
-            badge: '2',
+            label: 'Alle',
+            icon: 'pi pi-list',
           },
+        ],
+      },
+      {
+        label: 'Underwriting',
+        items: [
+          {
+            label: 'Pendenzen',
+            icon: 'pi pi-cog',
+            // shortcut: '⌘+O',
+            badge: '9',
+          },
+
+          {
+            label: 'Warten',
+            icon: 'pi pi-inbox',
+            badge: 'Neu',
+          },
+          {
+            label: 'Alle',
+            icon: 'pi pi-list',
+          },
+        ],
+      },
+      {
+        label: 'Benutzer',
+        items: [
           {
             label: 'Logout',
             icon: 'pi pi-sign-out',

@@ -24,9 +24,9 @@ import { MenuModule } from 'primeng/menu';
   styles: [
     `
       .logo {
-        @apply ml-2 mr-4;
-        width: 60px;
-        height: 60px;
+        @apply ml-2 mr-4 rounded-xl;
+        width: 55px;
+        height: 55px;
         // margin: 100px;
         // margin-x: 10px;
         background-color: red;
@@ -45,58 +45,104 @@ export class MenuComponent {
   ngOnInit() {
     this.items = [
       {
-        label: 'Home',
+        label: 'Fach',
         icon: 'pi pi-home',
       },
       {
-        label: 'Features',
+        label: 'Dev',
         icon: 'pi pi-star',
       },
       {
-        label: 'Projects',
-        icon: 'pi pi-search',
+        label: 'Pocs',
+        icon: 'pi pi-palette',
         items: [
           {
-            label: 'Core',
+            label: 'Performance',
             icon: 'pi pi-bolt',
             shortcut: '⌘+S',
           },
           {
-            label: 'Blocks',
+            label: 'Temporalität',
             icon: 'pi pi-server',
             shortcut: '⌘+B',
           },
           {
-            label: 'UI Kit',
+            label: 'Prozess',
             icon: 'pi pi-pencil',
             shortcut: '⌘+U',
           },
+          // {
+          //   separator: true,
+          // },
+        ],
+      },
+      {
+        label: 'Task Steuerung',
+        icon: 'pi pi-th-large',
+        items: [
           {
-            separator: true,
+            label: 'Antragsverarbeitung',
+            icon: 'pi pi-book',
+            shortcut: '⌘+Q',
           },
           {
-            label: 'Templates',
-            icon: 'pi pi-palette',
+            label: 'Underwriting',
+            icon: 'pi pi-book',
+            shortcut: '⌘+Q',
+          },
+          {
+            label: 'Beratung',
+            icon: 'pi pi-book',
+            shortcut: '⌘+Q',
+          },
+          {
+            label: 'Support',
+            icon: 'pi pi-book',
+            shortcut: '⌘+Q',
+          },
+        ],
+      },
+      {
+        label: 'Live Daten',
+        icon: 'pi pi-chart-bar',
+        items: [
+          {
+            label: 'Fachliche Vorgänge',
+            icon: 'pi pi-chart-bar',
+          },
+          {
+            label: 'Events',
+            icon: 'pi pi-chart-line',
+          },
+          {
+            label: 'Debug',
+            icon: 'pi pi-chart-line',
             items: [
               {
-                label: 'Apollo',
-                icon: 'pi pi-palette',
-                badge: '2',
+                label: 'Events',
               },
               {
-                label: 'Ultima',
-                icon: 'pi pi-palette',
-                badge: '3',
+                label: 'Errors',
+                items: [
+                  {
+                    label: 'Promos Diffs',
+                  },
+                  {
+                    label: 'DKS Writes',
+                  },
+                ],
               },
             ],
           },
         ],
       },
-      {
-        label: 'Contact',
-        icon: 'pi pi-envelope',
-        badge: '3',
-      },
+      // {
+      //   label: 'Pocs',
+      //   icon: 'pi pi-envelope',
+      //   badge: 'Neu',
+      //   items:
+      // },
     ];
+    // this.items = [];
   }
 }

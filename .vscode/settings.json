@@ -22,7 +22,7 @@
 //     "jest.preset.js": true,
 //     "karma.conf.js": true,
 //     "ngsw-config.json": true,
-//     // "nx.json": true,
+//     "nx.json": true,
 //     "package.json": true,
 //     "package-lock.json": true,
 //     "README.md": true,

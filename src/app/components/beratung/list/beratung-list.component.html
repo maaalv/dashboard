@@ -1,4 +1,13 @@
-<p-card header="Beratungen" subheader="Subheader">
+<p-card
+  header="Beratungen"
+  subheader="Alles zu Beratungen, Angeboten / Offerten für Berater und Direktkanal"
+>
+  <p-card class="m-4">
+    <img src="prozess.png" class="h-64" />
+  </p-card>
+
+  <!-- <p-divider type="solid" /> -->
+
   <div class="flex flex-col gap-4">
     <div class="flex gap-4">
       <p-card
@@ -9,15 +18,22 @@
         37
       </p-card>
       <p-card
-        header="Aktive GDs"
-        subheader="Vom Kunden gestartete dynamische GD"
+        header="Abschlüsse"
+        subheader="In den letzten 14 Tagen"
+        styleClass="flex-1 w-full border-l-2 border-green-400"
+      >
+        44
+      </p-card>
+      <p-card
+        header="Aktive GD@POS"
+        subheader="Erste dynamische GD"
         styleClass="flex-1 w-full border-l-2 border-purple-400"
       >
         4
       </p-card>
       <p-card
         header="Inaktive Sessions"
-        subheader="Daily Active Users :)"
+        subheader="Keine Interaktion seit 14 Tagen"
         styleClass="flex-1 w-full border-l-2 border-yellow-400"
       >
         223
